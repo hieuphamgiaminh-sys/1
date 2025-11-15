@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial;
+    background-color: #000;
+}
+
+#aquarium {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Cá */
+.fish {
+    position: absolute;
+    width: 120px;
+    animation: swim linear infinite;
+}
+
+@keyframes swim {
+    from { transform: translateX(-200px); }
+    to   { transform: translateX(120vw); }
+}
+
+/* Nút điều khiển */
+.controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ffffff88;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #fff;
+}
+.fish {
+    background: transparent !important;
+    mix-blend-mode: normal;
+}
+.fish {
+    position: absolute;
+    width: 150px;
+    pointer-events: none;
+    background: transparent !important;
+}
